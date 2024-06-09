@@ -1,0 +1,51 @@
+1192 INFO  : [96m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at https://serenity-bdd.info                                     
+ Documentation at https://serenity-bdd.github.io                                     
+ Test Automation Training and Coaching: https://www.serenity-dojo.com                
+ Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+-------------------------------------------------------------------------------------
+[0m
+1215 INFO  : Test Suite Started: Get status of HW phone
+1347 INFO  : Test Suite Started: Get status of HW phone
+1723 INFO  : 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Get Properties(get-status-of-hw-phone;get-properties)
+--------------------------------------------------------------------------------
+1756 INFO  : [92m|-- Given I have endpoint as "apiBaseUrl/GET_PROPERTIES"[0m
+1885 INFO  com.taf.base.Base: Config.properties loaded
+1886 INFO  com.taf.base.Base: Loading env1.properties loaded
+1890 INFO  com.taf.base.Base: env1.properties loaded
+1891 INFO  com.taf.base.Base: Constants loaded in Properties map
+1891 INFO  com.taf.base.Base: Created endpoint is:https://dev.niswey.net/v1/getV3Properties
+1902 INFO  : [92m|-- When I send the "get" request to "get properties of the HW phone"
+| description | key | value |
+| queryParam | user_id | cHJhdmVlbkBuaXN3ZXkuY29tfDI3MjAzMjc= |
+| queryParam | contact_id | 21728779167 |
+| queryParam | object_type | contacts |[0m
+3401 INFO  : [91mSTEP ERROR: java.lang.ExceptionInInitializerError[0m
+3419 INFO  : [92m|---- Then I should see the response status code as "200"[0m
+3428 INFO  : [33m      -> STEP IGNORED[0m
+3442 ERROR : [91m
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Get Properties
+---------------------------------------------------------------[0m
+3533 ERROR : [91m    Test failed at step: When I send the "get" request to "get properties of the HW phone" | description | key | value | | queryParam | user_id | cHJhdmVlbkBuaXN3ZXkuY29tfDI3MjAzMjc= | | queryParam | contact_id | 21728779167 | | queryParam | object_type | contacts |[0m
+3533 ERROR : [91m    [0m

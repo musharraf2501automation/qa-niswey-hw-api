@@ -1,0 +1,255 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "ArticleTitle": {
+                  "type": "string"
+                },
+                "Subtitle": {
+                  "type": "string"
+                },
+                "BodyContent": {
+                  "type": "string"
+                },
+                "Location": {
+                  "type": "string"
+                },
+                "Category": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "createdAt": {
+                  "type": "string"
+                },
+                "updatedAt": {
+                  "type": "string"
+                },
+                "publishedAt": {
+                  "type": "string"
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "HeroImage": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "attributes": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "alternativeText": {
+                              "type": "null"
+                            },
+                            "caption": {
+                              "type": "null"
+                            },
+                            "width": {
+                              "type": "integer"
+                            },
+                            "height": {
+                              "type": "integer"
+                            },
+                            "formats": {
+                              "type": "object",
+                              "properties": {
+                                "thumbnail": {
+                                  "type": "object",
+                                  "properties": {
+                                    "ext": {
+                                      "type": "string"
+                                    },
+                                    "url": {
+                                      "type": "string"
+                                    },
+                                    "hash": {
+                                      "type": "string"
+                                    },
+                                    "mime": {
+                                      "type": "string"
+                                    },
+                                    "name": {
+                                      "type": "string"
+                                    },
+                                    "path": {
+                                      "type": "null"
+                                    },
+                                    "size": {
+                                      "type": "number"
+                                    },
+                                    "width": {
+                                      "type": "integer"
+                                    },
+                                    "height": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "ext",
+                                    "url",
+                                    "hash",
+                                    "mime",
+                                    "name",
+                                    "path",
+                                    "size",
+                                    "width",
+                                    "height"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "thumbnail"
+                              ]
+                            },
+                            "hash": {
+                              "type": "string"
+                            },
+                            "ext": {
+                              "type": "string"
+                            },
+                            "mime": {
+                              "type": "string"
+                            },
+                            "size": {
+                              "type": "number"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "previewUrl": {
+                              "type": "null"
+                            },
+                            "provider": {
+                              "type": "string"
+                            },
+                            "provider_metadata": {
+                              "type": "null"
+                            },
+                            "createdAt": {
+                              "type": "string"
+                            },
+                            "updatedAt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "alternativeText",
+                            "caption",
+                            "width",
+                            "height",
+                            "formats",
+                            "hash",
+                            "ext",
+                            "mime",
+                            "size",
+                            "url",
+                            "previewUrl",
+                            "provider",
+                            "provider_metadata",
+                            "createdAt",
+                            "updatedAt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "attributes"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                },
+                "localizations": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {}
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                }
+              },
+              "required": [
+                "ArticleTitle",
+                "Subtitle",
+                "BodyContent",
+                "Location",
+                "Category",
+                "createdAt",
+                "updatedAt",
+                "publishedAt",
+                "locale",
+                "HeroImage",
+                "localizations"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "attributes"
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "pagination": {
+          "type": "object",
+          "properties": {
+            "start": {
+              "type": "integer"
+            },
+            "limit": {
+              "type": "integer"
+            },
+            "total": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "start",
+            "limit",
+            "total"
+          ]
+        }
+      },
+      "required": [
+        "pagination"
+      ]
+    }
+  },
+  "required": [
+    "data",
+    "meta"
+  ]
+}

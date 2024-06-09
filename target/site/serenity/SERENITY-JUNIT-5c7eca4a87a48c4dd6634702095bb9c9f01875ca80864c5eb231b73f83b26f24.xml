@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Get status of HW phone" skipped="0" tests="1" time="1.71" timestamp="2024-06-09 01:02:18"><testcase name="Get Properties"><error type="java.lang.ExceptionInInitializerError"/><system-err>null
+net.serenitybdd.rest.utils.RestDecorationHelper.decorate(RestDecorationHelper.java:20)
+net.serenitybdd.rest.SerenityRest.fetchRequestSpecification(SerenityRest.java:233)
+net.serenitybdd.rest.SerenityRest.given(SerenityRest.java:220)
+com.taf.api.utilities.Utility.buildRequest(Utility.java:219)
+com.taf.api.stepDefs.CommonStepDef.i_send_the_something_request_to_something(CommonStepDef.java:35)
+✽.I send the "get" request to "get properties of the HW phone"(file:///Users/niswey/Documents/qa-niswey-hw-api/src/test/resources/features/api/consumptionPortal/niswey_demo.feature:14)
+</system-err></testcase></testsuite>
